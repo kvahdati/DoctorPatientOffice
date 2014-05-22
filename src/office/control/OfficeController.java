@@ -53,7 +53,7 @@ public class OfficeController
 	{
 		if(patientCount < patients.size())
 		{
-			Patient tempPatient = new Patient(name, age, gender, symptoms);
+			Patient tempPatient = new Patient(doctor, age, gender, symptoms);
 			patients.add(tempPatient);
 		}
 		else

@@ -118,7 +118,7 @@ public class OfficePanel extends JPanel
 		 this.add(docHurt);
 		 this.add(docBrown);
 		 this.add(patientz);
-		 this.add(patientID)
+		 this.add(patientID);
 		 this.add(symptomsList);
 	 }
 	 

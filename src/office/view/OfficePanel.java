@@ -2,6 +2,7 @@ package office.view;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
@@ -12,6 +13,8 @@ import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.SpringLayout;
+
+import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader.Array;
 
 import office.control.OfficeController;
 import office.model.Patient;
@@ -32,6 +35,11 @@ public class OfficePanel extends JPanel
 	private JButton addButton;
 	private JButton displayButton;
 	private JButton editButton;
+	private String doctorString;
+	private String PatientName;
+	private ArrayList<String> symptomList;
+	private String Symptomzz;
+	private String[] symptomArray;
 	
 	
 	
@@ -53,6 +61,9 @@ public class OfficePanel extends JPanel
 			patientz = new JComboBox<Patient>();
 			patientID = new JTextField(15);
 			symptomsList = new JTextArea(1,2);
+			doctorString = new String("");
+			PatientName = new String("");
+			symptomList = new ArrayList<String>();
 			setupPanel();
 			setupLayout();
 			setupListeners();
@@ -89,20 +100,28 @@ public class OfficePanel extends JPanel
 			{
 				if(docBrown != null)
 				{
-					OfficeController.class.(addPatient());
+					doctorString = "Doc Brown";
 				}
 				else if(docHurt != null)
 				{
-					
+					doctorString = "Doc Hurt";
 				}
 				else if(docBrown != null && docHurt != null)
 				{
-					JOptionPane.showMessageDialog(null, "You bloody nit wit. Choose one!");
+					JOptionPane.showMessageDialog(null, "You bloody twit. Choose one! Only one!");
 				}
 				else
 				{
-					JOptionPane.showMessageDialog(null, "You bloody nit wit. Choose one!");
+					JOptionPane.showMessageDialog(null, "You bloody twit. Choose one! At leat one!");
 				}
+				PatientName = patientID.getText();
+				symptomArray = symptomsList.getText().split(",");
+				for (String currentArray: symptomArray)
+				{
+					symptomList.add(currentArray);
+				}
+				
+				
 			
 			}
 		 });

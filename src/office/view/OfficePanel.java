@@ -57,7 +57,19 @@ public class OfficePanel extends JPanel
 	 
 	private void setupPanel()
 	 {
-		 
+		 this.setLayout(myLayout);
+		 this.setSize(550,450);
+		 this.add(editButton);
+		 this.add(addButton);
+		 this.add(displayButton);
+		 this.add(title);
+		 this.add(patientzLabel);
+		 this.add(doctorLabel);
+		 this.add(symptomsLabel);
+		 this.add(docdoc);
+		 this.add(patientz);
+		 this.add(patientID);
+		 this.add(symptomsList);
 	 }
 	 
 	 private void setupLayout()

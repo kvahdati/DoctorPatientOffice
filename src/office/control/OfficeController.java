@@ -1,7 +1,5 @@
 package office.control;
 
-import hipster.model.Hipster;
-
 import java.util.ArrayList;
 
 import javax.swing.JOptionPane;
@@ -51,7 +49,7 @@ public class OfficeController
 		appFrame = new OfficeFrame(this);
 	}
 	
-	public Doctor getSpecifiedHipster(int position)
+	public Doctor getSpecifiedDoctor(int position)
 	{
 		Doctor currentDoc = null;
 		

@@ -49,7 +49,7 @@ public class OfficeController
 		appFrame = new OfficeFrame(this);
 	}
 	
-	public void addPatient(String name, int age, String gender, ArrayList<String> symptoms)
+	public void addPatient(String doctor, int age, String gender, ArrayList<String> symptoms)
 	{
 		if(patientCount < patients.size())
 		{

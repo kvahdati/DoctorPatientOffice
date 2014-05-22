@@ -39,6 +39,8 @@ public class OfficePanel extends JPanel
 	private String PatientName;
 	private ArrayList<String> symptomList;
 	private String Symptomzz;
+	private String age;
+	private String gender;
 	private String[] symptomArray;
 	
 	
@@ -64,6 +66,8 @@ public class OfficePanel extends JPanel
 			doctorString = new String("");
 			PatientName = new String("");
 			symptomList = new ArrayList<String>();
+			age = new String("");
+			gender = new String("");
 			setupPanel();
 			setupLayout();
 			setupListeners();
@@ -83,7 +87,7 @@ public class OfficePanel extends JPanel
 		 this.add(docHurt);
 		 this.add(docBrown);
 		 this.add(patientz);
-		 this.add(patientID);
+		 this.add(patientID)
 		 this.add(symptomsList);
 	 }
 	 
@@ -120,6 +124,7 @@ public class OfficePanel extends JPanel
 				{
 					symptomList.add(currentArray);
 				}
+				myController.addPatient(doctorString, PatientName, age, gender, symptomList);
 				
 				
 			

@@ -71,12 +71,11 @@ public class OfficePanel extends JPanel
 			doctorLabel = new JLabel("Doctors");
 			
 			symptomsLabel = new JLabel("Symptoms");
-			myLayout.putConstraint(SpringLayout.SOUTH, patientzLabel, -101, SpringLayout.NORTH, symptomsLabel);
-			myLayout.putConstraint(SpringLayout.WEST, symptomsLabel, 0, SpringLayout.WEST, editButton);
+			
 			docBrown = new JCheckBox("Doctor Brown");
 			myLayout.putConstraint(SpringLayout.NORTH, docBrown, 17, SpringLayout.SOUTH, title);
 			myLayout.putConstraint(SpringLayout.EAST, docBrown, -60, SpringLayout.EAST, this);
-			docHurt = new JCheckBox("Doctor Hert");
+			docHurt = new JCheckBox("Doctor Hurt");
 			myLayout.putConstraint(SpringLayout.NORTH, docHurt, -4, SpringLayout.NORTH, doctorLabel);
 
 			docHurt = new JCheckBox("Doctor Hurt");

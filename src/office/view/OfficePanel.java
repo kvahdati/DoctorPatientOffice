@@ -19,7 +19,8 @@ public class OfficePanel extends JPanel
 {
 	private OfficeController myController;
 	private SpringLayout myLayout;
-	private JCheckBox docdoc;
+	private JCheckBox docBrown;
+	private JCheckBox docHert;
 	private JComboBox patientz;
 	private JTextField patientID;
 	private JTextArea symptomsList;
@@ -46,7 +47,8 @@ public class OfficePanel extends JPanel
 			patientzLabel = new JLabel("Patients");
 			doctorLabel = new JLabel("Doctors");
 			symptomsLabel = new JLabel("Symptoms");
-			docdoc = new JCheckBox();
+			docBrown = new JCheckBox("Doctor Brown");
+			docHert = new JCheckBox("Doctor Hert");
 			patientz = new JComboBox<Patient>();
 			patientID = new JTextField(15);
 			symptomsList = new JTextArea(1,2);
@@ -66,7 +68,8 @@ public class OfficePanel extends JPanel
 		 this.add(patientzLabel);
 		 this.add(doctorLabel);
 		 this.add(symptomsLabel);
-		 this.add(docdoc);
+		 this.add(docHert);
+		 this.add(docBrown);
 		 this.add(patientz);
 		 this.add(patientID);
 		 this.add(symptomsList);

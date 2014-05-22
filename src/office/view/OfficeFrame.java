@@ -6,9 +6,9 @@ import office.control.*;
 public class OfficeFrame extends JFrame
 {
 	//private AppPanel myPanel;
-	private AppController myController;
+	private OfficeController myController;
 	
-	public OfficeFrame(AppController myController)
+	public OfficeFrame(OfficeController myController)
 	{
 		this.myController = myController;
 		myPanel = new AppPanel(myController);

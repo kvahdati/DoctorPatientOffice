@@ -1,10 +1,12 @@
 package office.view;
 
+import office.control.OfficeController;
+
 public class OfficePanel
 {
-	 OfficePanel(OfficeController baseController)
+	 OfficePanel(OfficeController myController)
 		{
-			this.baseController = baseController;
+			this.myController = myController;
 
 			setupPanel();
 			setupLayout();

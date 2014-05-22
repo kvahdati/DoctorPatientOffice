@@ -1,5 +1,8 @@
 package office.view;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
@@ -64,6 +67,28 @@ public class OfficePanel extends JPanel
 	 
 	 private void setupListeners()
 	 {
+		 addButton.addActionListener(new ActionListener()
+		 {
+			public void actionPerformed(ActionEvent click)
+			{
+				
+			}
+		 });
 		 
+		 displayButton.addActionListener(new ActionListener()
+		 {
+			public void actionPerformed(ActionEvent click)
+			{
+				
+			}
+		 });
+		 
+		 editButton.addActionListener(new ActionListener()
+		 {
+			public void actionPerformed(ActionEvent click)
+			{
+				
+			}
+		 });
 	 }
 }

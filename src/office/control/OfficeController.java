@@ -49,19 +49,6 @@ public class OfficeController
 		appFrame = new OfficeFrame(this);
 	}
 	
-	public Doctor getSpecifiedDoctor(int position)
-	{
-		Doctor currentDoc = null;
-		
-		if(position < doctors.length)
-		{
-			currentDoc = doctors[position];
-		}
-		
-		return currentDoc;
-	}
-	
-	
 	public void addPatient(String name, int age, String gender, ArrayList<String> symptoms)
 	{
 		if(patientCount < patients.size())

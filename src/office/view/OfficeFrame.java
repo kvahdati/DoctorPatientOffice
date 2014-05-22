@@ -11,7 +11,7 @@ public class OfficeFrame extends JFrame
 	public OfficeFrame(OfficeController myController)
 	{
 		this.myController = myController;
-		myPanel = new AppPanel(myController);
+		myPanel = new OfficePanel(myController);
 		
 		setupFrame();
 	}

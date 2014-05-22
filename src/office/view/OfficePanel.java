@@ -35,19 +35,16 @@ public class OfficePanel extends JPanel
 	private JButton addButton;
 	private JButton displayButton;
 	private JButton editButton;
-<<<<<<< HEAD
 	private JTextField ageField;
 	private JTextField genderField;
 	private JTextField nameField;
 	
 	
-=======
 	private String doctorString;
 	private String PatientName;
 	private ArrayList<String> symptomList;
 	private String Symptomzz;
 	private String[] symptomArray;
->>>>>>> ac8aa6c93660a46f62e0347465ba664a52654bc3
 	
 	
 	
@@ -75,16 +72,14 @@ public class OfficePanel extends JPanel
 			myLayout.putConstraint(SpringLayout.SOUTH, patientzLabel, -101, SpringLayout.NORTH, symptomsLabel);
 			myLayout.putConstraint(SpringLayout.WEST, symptomsLabel, 0, SpringLayout.WEST, editButton);
 			docBrown = new JCheckBox("Doctor Brown");
-<<<<<<< HEAD
 			myLayout.putConstraint(SpringLayout.NORTH, docBrown, 17, SpringLayout.SOUTH, title);
 			myLayout.putConstraint(SpringLayout.EAST, docBrown, -60, SpringLayout.EAST, this);
-			docHert = new JCheckBox("Doctor Hert");
-			myLayout.putConstraint(SpringLayout.NORTH, docHert, -4, SpringLayout.NORTH, doctorLabel);
-=======
+			docHurt = new JCheckBox("Doctor Hert");
+			myLayout.putConstraint(SpringLayout.NORTH, docHurt, -4, SpringLayout.NORTH, doctorLabel);
+
 			docHurt = new JCheckBox("Doctor Hurt");
->>>>>>> ac8aa6c93660a46f62e0347465ba664a52654bc3
 			patientz = new JComboBox<Patient>();
-			myLayout.putConstraint(SpringLayout.EAST, docHert, 0, SpringLayout.EAST, patientz);
+			myLayout.putConstraint(SpringLayout.EAST, docHurt, 0, SpringLayout.EAST, patientz);
 			myLayout.putConstraint(SpringLayout.SOUTH, patientz, 0, SpringLayout.SOUTH, patientzLabel);
 			myLayout.putConstraint(SpringLayout.EAST, patientzLabel, -77, SpringLayout.WEST, patientz);
 			myLayout.putConstraint(SpringLayout.EAST, patientz, -175, SpringLayout.EAST, this);
@@ -93,17 +88,14 @@ public class OfficePanel extends JPanel
 			myLayout.putConstraint(SpringLayout.SOUTH, patientID, 0, SpringLayout.SOUTH, patientzLabel);
 			myLayout.putConstraint(SpringLayout.EAST, patientID, 0, SpringLayout.EAST, docBrown);
 			symptomsList = new JTextArea(1,2);
-<<<<<<< HEAD
 			myLayout.putConstraint(SpringLayout.NORTH, symptomsList, 267, SpringLayout.NORTH, this);
 			myLayout.putConstraint(SpringLayout.NORTH, symptomsLabel, 5, SpringLayout.NORTH, symptomsList);
 			myLayout.putConstraint(SpringLayout.WEST, symptomsList, 102, SpringLayout.WEST, this);
 			myLayout.putConstraint(SpringLayout.SOUTH, symptomsList, -55, SpringLayout.NORTH, editButton);
 			myLayout.putConstraint(SpringLayout.EAST, symptomsList, 0, SpringLayout.EAST, addButton);
-=======
 			doctorString = new String("");
 			PatientName = new String("");
 			symptomList = new ArrayList<String>();
->>>>>>> ac8aa6c93660a46f62e0347465ba664a52654bc3
 			setupPanel();
 			setupLayout();
 			setupListeners();

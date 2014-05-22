@@ -21,7 +21,6 @@ public class OfficeController
 	
 	public OfficeController()
 	{
-		appFrame = new OfficeFrame();
 		doctors = new Doctor[2];
 		patients = new ArrayList<Patient>();
 		patientCount = 0;
@@ -50,6 +49,18 @@ public class OfficeController
 	public void start()
 	{
 		appFrame = new OfficeFrame(this);
+	}
+	
+	public Doctor getSpecifiedHipster(int position)
+	{
+		Doctor currentDoc = null;
+		
+		if(position < doctors.length)
+		{
+			currentDoc = doctors[position];
+		}
+		
+		return currentDoc;
 	}
 	
 	

@@ -56,10 +56,7 @@ public class OfficeController
 			Patient tempPatient = new Patient(doctor, age, gender, symptoms);
 			patients.add(tempPatient);
 		}
-		else
-		{
-			JOptionPane.showMessageDialog(appFrame, "The cubby is full. You are too mainstream to be included.");
-		}
+		
 	}
 
 }

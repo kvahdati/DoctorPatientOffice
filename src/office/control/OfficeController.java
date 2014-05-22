@@ -52,10 +52,6 @@ public class OfficeController
 		appFrame = new OfficeFrame(this);
 	}
 	
-	public void setPatient(String name, int age, String gender, ArrayList<String> symptoms)
-	{
-		patients = new ArrayList<String>(name, age, gender, symptoms);
-	}
 	
 	public void addPatient(String name, int age, String gender, ArrayList<String> symptoms)
 	{

@@ -7,7 +7,9 @@ public class Doctor
 	
 	public Doctor()
 	{
-	
+		name = "Doc Brown";
+		specality = "Time Travel";
+		
 	}
 	
 	public Doctor(String name, String specality)

@@ -7,6 +7,7 @@ import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
@@ -86,7 +87,23 @@ public class OfficePanel extends JPanel
 		 {
 			public void actionPerformed(ActionEvent click)
 			{
-				
+				if(docBrown != null)
+				{
+					OfficeController.class.(addPatient());
+				}
+				else if(docHurt != null)
+				{
+					
+				}
+				else if(docBrown != null && docHurt != null)
+				{
+					JOptionPane.showMessageDialog(null, "You bloody nit wit. Choose one!");
+				}
+				else
+				{
+					JOptionPane.showMessageDialog(null, "You bloody nit wit. Choose one!");
+				}
+			
 			}
 		 });
 		 
